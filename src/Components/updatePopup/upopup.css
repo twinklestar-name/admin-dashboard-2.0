@@ -1,0 +1,39 @@
+.upopup-box
+{
+    width:32%;
+    height:47%;
+    position: absolute;
+    top:30%;
+    left:40%;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow:0 0 8px black;
+    background-color: #435c70;
+    opacity:0.9;
+    transition-duration: 2s;
+}
+.upopup-box i
+{
+    color:#fff;
+    margin-left:92%;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.upopup-message
+{
+    padding:40px;
+    font-size: 25px;
+    margin-top: 25%;
+    background-color: #4e657a;
+}
+
+@media (max-width: 574px)
+{
+    .upopup-box
+    {
+        top:1650px;
+        left:50px;
+        width:120%;
+    }
+}

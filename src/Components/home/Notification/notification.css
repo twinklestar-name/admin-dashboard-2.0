@@ -1,0 +1,54 @@
+.notification
+{
+    display: flex;
+    flex-direction: row;
+    height:80px;
+    width:95%;
+    background-color: #4e657a;
+    color: #fff;
+    font-size: 95%;
+    margin-bottom: 15px;
+    padding:15px;
+}
+.message
+{
+    padding-top:0;
+    margin:0;
+}
+.noti-images
+{
+    width: 80px;
+    height: 80px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.time
+{
+    color: #bdcbd8;
+}
+
+@media (max-width: 574px)
+{
+.noti-con
+{
+    height:850px;
+    margin-bottom: 60px;
+}
+.notification
+{
+    width:380px;
+    font-size: 150%;
+    height: 180px;
+}
+.noti-images
+{
+    width:120px;
+    height:120px;
+}
+.notification .message
+{
+    font-size: 25px;
+}
+
+}

@@ -1,0 +1,314 @@
+.productPage
+{
+    margin:24px 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productListContainer
+{
+    width:55%;
+    box-sizing: border-box;
+    height: auto;
+    box-shadow:1px 1px 5px 0 #455c71;
+    background-color:#435c70;
+}
+.productTableContainer
+{
+    overflow-y: scroll;
+    height: max-content;
+    max-height: 445px;
+    width:90%;
+    margin:40px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+}
+table 
+{
+    background-color: #50697f;
+    color: #fff;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    margin:0;
+    width:100%;
+}
+.l-table
+{
+    width:100%;
+}
+thead
+{
+    background-color: #486177;
+    color: #fff;
+    font-size: 12px;
+}
+tr
+{
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+table thead th
+{
+    padding:14px 18px;
+}
+table tbody th
+{
+    padding:25px 20px;
+}
+table tbody td
+{
+    padding-left:30px;
+}
+table input
+{
+    background-color: #394e64;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+table tbody i
+{
+   font-size: 20px;
+   background-color: #394e64;
+   border-radius:50%;
+   padding:11px;
+   cursor: pointer;
+}
+.buttonContainer
+{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.categoryButtonContainer
+{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add-btn,.de-se-btn,.category-btn
+{
+    font-size: 90%;
+    width:100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding:15px 28px;
+    text-align: center;
+    transition: all .2s ease;
+    cursor: pointer;
+    margin-top: 0;
+    background-color: #f5a623;
+    border: 2px solid #f5a623;
+}
+.de-se-btn
+{
+    margin-bottom:30px;
+}
+.categoryListContainer
+{
+    width:40%;
+    background-color: #435c70;
+    box-shadow:  1px 5px 0 #455c71;
+    height:max-content;
+}
+.categoryListContainer h2
+{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px; 
+    padding-top:20px;
+    padding-left:40px;
+}
+.categoryTableContainer
+{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    max-height: 425px;
+    overflow-y: scroll;
+}
+@media(max-width:720px)
+{
+    .productPage
+    {
+        flex-direction: column;
+        margin:24px 5%;
+    }
+    .productListContainer
+    {
+        width:100%;
+        max-height:auto;
+    }
+    .categoryListContainer
+    {
+        width:100%;
+        margin-top:40px;
+    }
+}
+/* .product-page
+{
+    margin:0;
+}
+.pro-container
+{
+    margin: 0 13%;
+    margin-top:35px;
+    display: flex;
+    justify-content: space-between;
+}
+.pl-con
+{
+    width:68%;
+    margin-bottom: 95px;
+    height:76%;
+    background-color: #435c70;
+    margin-top: 50px;
+}
+.pl
+{
+    height: 445px;
+    width:86%;
+    margin:40px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    background-color:#435c70;
+}
+
+.pc-con
+{
+    background-color:#435c70;
+    margin-bottom: 60px;
+    width: 28.5%;
+    height: 610px;
+    margin-top: 50px;
+}
+.add-btn,.de-se-btn
+{
+    width:87%;
+    display: block;
+    margin-left: 40px;
+    padding:16px 20px;
+}
+.de-se-btn
+{
+    margin-top:0;
+    margin-bottom: 35px;
+}
+.pc h2
+{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px; 
+    padding-top:20px;
+    padding-left:40px;
+}
+.right-tc
+{
+    height: 405px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    margin-left:40px;
+    margin-right:40px;
+}
+.r-table
+{
+    width:100%;
+    height: 100%;
+    padding-left: 50px;
+}
+.category-btn
+{
+    margin-left:40px;
+    width:74%;
+    padding:16px 15px;
+}
+@media (max-width: 720px)
+{
+    .pro-container
+    {
+        display: block;
+        margin:50px 20px;
+        margin-bottom: 0;
+    }
+    .pl-con
+    {
+        width: 100%;
+        height: 970px;
+        margin-bottom: 50px;
+    }
+    .l-table
+    {
+        width:500px;
+    }
+    .l-table thead
+    {
+        margin-top: 40px;
+    }
+    .l-table th
+    {
+        font-size: 20px;
+    }
+    .l-table tbody,.r-table tbody
+    {
+        font-size: 22px;
+    }
+    .l-table tbody i,.r-table tbody i
+    {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 50%;
+        margin-left:70px;
+        margin-top:20px;
+    }
+    .pl
+    {
+        width:100%;
+        height: 696px;
+        padding-top:40px;
+        margin: 0;
+    }
+    .add-btn,.de-se-btn
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding:15px 18px;
+        font-size: 14px;
+    }
+    .pc-con {
+        width: 100%;
+        height: 880px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .pc h2
+    {
+        font-size: 27px;
+        padding-top:40px;
+        padding-bottom: 20px;
+    }
+    .right-tc
+    {
+        height:600px;
+        width:100%;
+        margin-left:4px;
+        margin-bottom: 30px;
+    }
+    .r-table
+    {
+        width: 100%;
+        height: 700px;
+    }
+    .category-btn
+    {
+        margin-left: 0;
+        width:87%;
+    }
+    tr
+    {
+        font-weight: 400!important;
+    }
+} */

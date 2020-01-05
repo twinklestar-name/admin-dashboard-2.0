@@ -1,0 +1,394 @@
+.account-page
+{
+    color: white;
+    margin:0;
+}
+.acc-container{
+    margin:0 13%;
+}
+.list-Container
+{
+    background-color:#435c70;
+    box-sizing: border-box;
+    margin-top: 35px;
+    height:220px;
+    padding:25px 40px;
+}
+.list-Container h2
+{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.dropdown
+{
+    background-color: #4e657a;
+    color: #acc6de;
+    width: 100%;
+    padding:15px 20px;
+    font-size: 17px;
+}
+option
+{
+    padding:20px 30px;
+    font-size: 15px;
+}
+.accountCredentialsContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.avatarContainer
+{
+    background-color:#435c70;
+    height:510px;
+    box-sizing: border-box;
+    width:30%;
+    margin-top:35px;
+    margin-bottom:50px;
+    padding:20px 40px;
+}
+.avatarContainer h2
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.avatarContainer img
+{
+    cursor: pointer;
+    width:100%;
+    height:265px;
+    display: block;
+}
+.avatarContainer i
+{
+   font-size: 20px;
+   background-color: #394e64;
+   border-radius:50%;
+   padding:15px;
+   position: absolute;
+   top:79%;
+   left:25%;
+   display: none;
+   transition-duration: 5s;
+}
+.imageContainer:hover i{
+    display: block;
+}
+.avatarContainer input
+{
+    width:100%;
+    width:0.1px;
+    height:0.1px;
+    opacity: 0;
+    z-index: -1;
+}
+.avatarContainer  label{
+    font-size: 90%;
+    width:100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding-top:15px;
+    padding-bottom: 15px;
+    text-align: center;
+    transition: all .2s ease;
+    cursor: pointer;
+    background-color: #f5a623;
+    border: 2px solid #f5a623;
+}
+.avatarContainer label:hover
+{
+    border: 2px solid #f5a623;
+    color:#f5a623;
+    background-color: transparent;
+}
+.avatarCredentials
+{
+    background-color:#435c70;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 20px 40px; 
+    width:66%;
+    padding-bottom: 30px;
+}
+.avatarCredentials h2
+{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.accountsForm
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.accountFormGroup
+{
+    margin-bottom: 15px;
+    margin-top:10px;
+    width:45%;
+    margin-right: 15px;
+}
+label
+{
+    display: block;
+    margin-bottom: 12px;
+}
+.formInput
+{
+    padding:19px 18px;
+    height:15px;
+    background-color: #54657d;
+    color:white;
+    width:100%;
+    border:none;
+}
+.updateBtn,.deleteBtn
+{
+    font-size: 90%;
+    width:100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: white;
+    padding:15px 28px;
+    text-align: center;
+    transition: all .2s ease;
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: #f5a623;
+    border: 2px solid #f5a623;
+}
+.deleteButtonContainer
+{
+    width:100%;
+}
+@media(max-width:720px)
+{
+    .acc-container
+    {
+        margin:0 4%;
+    }
+    .accountCredentialsContainer
+    {
+        flex-direction: column;
+    }
+    .list-Container
+    {
+        padding:12px 18px;
+    }
+    .avatarContainer
+    {
+        width:100%;
+    }
+    .avatarCredentials
+    {
+        width:100%;
+        padding-left:12px;
+    }
+    .accountFormGroup
+    {
+        width: 100%;
+    }
+    .updateBtn,.deleteBtn
+    {
+        padding:0;
+        width:100%;
+        margin-left:auto;
+        margin-right: auto;
+        padding:12px 16px;
+    }
+    .formInput
+    {
+        height: 12px;
+        padding:18px 16px;
+    }
+}
+/*  
+@media (max-width: 1300px)
+{
+    .avatar-con img
+{
+    width:260px;
+    margin-left:40px;
+    margin-right:40px;
+    height:265px;
+}
+.update-btn
+{
+    padding:15px 15px;
+    width:290px;
+    height:50px;
+    margin-top:30px;
+}
+.delete-btn
+{
+    width:290px;
+    padding:15px 15px;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+}
+@media (max-width: 1200px)
+{
+    .avatar-con img
+{
+    width:230px;
+    margin-left:40px;
+    margin-right:40px;
+    height:265px;
+}
+}
+@media (max-width: 1100px)
+{
+    .avatar-con
+{
+    background-color:#435c70;
+    height:450px;
+    width:99%;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+    .as-con
+{
+    display:block;
+}
+.set-con
+{
+    background-color:#435c70;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+.avatar-con img
+{
+    width:350px;
+    margin-left:40px;
+    margin-right:40px;
+    height:265px;
+}
+}
+@media (max-width: 574px)
+{
+.dropdown {
+    margin: 0px 40px;
+    width: 420px;
+    font-size: 25px;
+    padding: 25px 20px;
+}
+.delete-btn
+{
+    width:435px;
+    padding:25px 15px;
+}
+.update-btn
+{
+    width:435px;
+    height:80px;
+}
+.choose-file
+{
+    position: absolute;
+    top:970px;
+    left:130px;
+    height:50px;
+    background-color: transparent;
+    background-color: red;
+    opacity: 0;
+    cursor: pointer;
+}
+.as-con {
+    display: block;
+}
+.acc-container {
+    margin: 30px 20px;
+    margin-bottom:0;
+}
+.loa-con h2 {
+    padding: 25px 40px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.loa-con p {
+    padding: 0px 40px;
+    font-size: 25px;
+}
+.loa-con {
+    background-color: #435c70;
+    margin-top: 5px;
+    height: 260px;
+}
+.avatar-con {
+    height: 620px;
+    width: 500px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.avatar-con h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 30px 40px;
+}
+.avatar-con img {
+    width: 420px;
+    margin-left: 40px;
+    height: 350px;
+}
+.upload-pic-btn {
+    width: 84%;
+}
+.set-con .acc-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    margin-right: 15px;
+}
+.set-con {
+    height: 1180px;
+    margin-top: 35px;
+    width: 500px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.set-con h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.form {
+    padding: 19px 18px;
+    height: 25px;
+    display: block;
+    width: 400px;
+    margin-right: 25px;
+}
+.avatar-con i
+{
+   font-size: 20px;
+   border-radius:50%;
+   padding:15px;
+   position: absolute;
+   top:720px;
+   left:250px;
+}
+.acc-form-group
+{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-size: 20px;
+}
+.acc-form-group input
+{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+} */
