@@ -252,67 +252,7 @@ class Account extends Component{
             </div>
         )
     }
-}    // render(){
-    // return(
-    //      <div className="account-page">
-    //          <div className="extra-space">hi</div>
-    //          <div className="acc-container">
-    //              <div className="loa-con">
-    //                  <h2>List of Accounts</h2>
-    //                  <p>Accounts</p>
-    //                  <select className="dropdown" value={this.state.accountType} onInput={(e)=>this.onSelectAccount(e)}>
-    //                      <option value="0">Select Account</option>
-    //                         {Object.keys(this.state.pageData).map((list,pos)=>
-    //                             <option value={list} key={pos}>{list}</option>
-    //                         )}
-    //                  </select>
-    //              </div>
-    //              <div className="as-con">
-    //                  <div className="avatar-con">
-    //                      <h2>Change Avatar</h2>
-    //                      <div className="image-con">
-    //                      <img src={this.state.pic} alt="avatar"/>
-    //                      <i className="far fa-trash-alt tm-product-delete-icon" onClick={this.onDeleteIconClick}></i>
-    //                      </div>
-    //                      <input type='file' accept="image/*" className='choose-file' onChange={(e)=>this.onPicUpload(e)}></input>
-    //                      <button className="upload-pic-btn">UPLOAD NEW PHOTO</button>
-    //                  </div>
-    //                  <div className="set-con">
-    //                      <h2>Account Settings</h2>
-    //                      <form className="acc-form" onSubmit={this.handleSubmit}>
-    //                         <div className="acc-form-group">
-    //                             <label for="accountname">Account Name</label>
-    //                             <input name="accountname" type="text" className="form" id="accountname" onInput={(e)=>this.onInputChange(e,'name')} value={this.state.accountName}></input>
-    //                         </div>
-    //                         <div className="acc-form-group">
-    //                             <label for="email">Account Email</label>
-    //                             <input name="email" type="email" className="form" id="email" onInput={(e)=>this.onInputChange(e,'email')}  value={this.state.accountEmail}></input>
-    //                         </div>
-    //                         <div className="acc-form-group">
-    //                             <label for="password">Password</label>
-    //                             <input name="password" type="password" className="form" id="password" onInput={(e)=>this.onInputChange(e,'password')} value={this.state.accountPassword}></input>
-    //                         </div>
-    //                         <div className="acc-form-group">
-    //                             <label for="password">Re-enter Password</label>
-    //                             <input name="password" type="password" className="form" id="password" onInput={(e)=>this.onInputChange(e,'password')} value={this.state.accountPassword}></input>
-    //                         </div>
-    //                         <div className="acc-form-group">
-    //                             <label for="phone">Phone</label>
-    //                             <input name="phone" type="text" className="form" id="phone" onInput={(e)=>this.onInputChange(e,'phone')} value={this.state.accountPhone}></input>
-    //                         </div>
-    //                         <button className="update-btn" type='submit' onClick={()=>this.state.accountType!==''?this.props.onShowPopup():alert("CANT UPDATE DEFAULT ACCOUNT")}>UPDATE YOUR PROFILE</button>
-    //                         {this.props.updatePopup? <UpdatePopup/> :null}
-    //                         <div className="acc-form-group">
-    //                             <button className="delete-btn" onClick={this.onDeleteAccountClick}>DELETE YOUR ACCOUNT</button>
-    //                         </div>
-    //                      </form>
-    //                  </div>
-    //              </div>
-    //          </div>
-    //          <div className="extra-space">hi</div>
-    //      </div>
-    // )}
-    // }
+}    
 
 const mapGlobalStateToProps=(globalState)=>{
     return{

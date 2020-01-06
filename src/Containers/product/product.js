@@ -99,47 +99,7 @@ class Product extends Component{
             </div>
         )
     }
-    // render(){
-    // return(
-    //      <div className="product-page">
-    //         <div className="pro-container">
-    //              <div className="pl-con">
-    //         <div className="pl">
-    // {/*---------------CHANGE-------------------*/}
-    //                   <ProductList propsToPass={
-    //                     {
-    //                         productListData:this.state.pageData.products,
-    //                         onClickingCheckbox:this.onChkBoxClick,
-    //                         onDeleteSingleRow:this.onDeleteIconClick
-    //                     }  
-    //                   }/> 
-    //                  </div>
-    //                  <Link to={'/addproduct'}><button className="add-btn">ADD NEW PRODUCT</button></Link>
-    //                  <button className="de-se-btn" onClick={(e)=>this.onDeleteSelectedBtnClick(e)}>DELETE SELECTED PRODUCTS</button>
-    //              </div>
-    //             <div className="pc-con">
-    //                  <div className="pc">
-    //                      <h2>Product categories</h2>
-    //                      <div className="right-tc">
-    //                 <table className="r-table">
-    //                              {/*---------------CHANGE-------------------*/}
-    //                               <Categories propsToPass={
-    //                                  {
-    //                                     categoriesPageData:this.state.pageData.categories,
-    //                                     onDeleteSingleRow:this.onDeleteIconClick
-    //                                  }
-    //                              }
-                                 
-    //                              />
-    //                          </table>
-    //                      </div>
-    //                      <Link to={'/product/popup'}><button className="category-btn" onClick={this.props.onShowPopup}>ADD NEW CATEGORY</button></Link> */}
-    //                      {/* {this.props.showPopup?<Popup/>:null}*/}
-    //                  </div> 
-    //             </div>
-    //         </div>
-    //      </div>
-    // )}
+    
 }
 
 const mapGlobalStateToProps=(globalState)=>{
